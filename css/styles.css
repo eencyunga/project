@@ -18,7 +18,7 @@ body {
     background: url('../images/logo.png') no-repeat;
     width: 270px;
     height: 83px;
-    margin: 15px 15px 15px 0;
+    margin: 15px;
 }
 
 .navbar-brand {
@@ -45,43 +45,93 @@ body {
     margin-top: 15px;
 }
 
+
 /* End of Header */
 
 
 /* Main Content */
 
+#main-content {
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+#video {
+    background-color: #9FEDD7;
+}
+
+#video img {
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+}
+
+#affected {
+    background-color: #FCE181;
+    margin-top: -30px;
+}
+
+#affected span {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.row .col-sm-4 img {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 50px #FEF9C7;
+    border: 2px solid #FEF9C7;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.img-circle img {
+    border-radius: 100%;
+}
+
+
 /* End of Main Content *
 
 /* Footer */
 
-#contact {	
-	background: #026670;
+.col-sm-4 {
+    margin-top: 30px;
 }
 
-#contact a {
-	color: #9FEDD7;
+#contact {
+    background: #026670;
 }
 
 #contact span {
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #FCE181;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FCE181;
+}
+
+#contact a {
+    color: #9FEDD7;
 }
 
 #contact a:hover,
 #contact a:focus {
-	text-decoration: none;
-	color: #FCE181;
+    text-decoration: none;
+    color: #FCE181;
 }
 
 #copyright {
-	margin: 15px 0;
+    margin: 30px 0;
 }
 
-/* Color scheme 
-	Teal #026670;
-	Sky Blue #9FEDD7;
-	Cream #FEF9C7;
-	Yellow #FCE181;
-	Neutral #EDEAE5;
-}
+
+/* Color scheme:
+    Teal #026670;
+    Sky Blue #9FEDD7;
+    Cream #FEF9C7;
+    Yellow #FCE181;
+    Neutral #EDEAE5;
+*/
