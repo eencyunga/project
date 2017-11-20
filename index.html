@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <title>Help Stop Climate Change</title>
+    <title>Home | Help Stop Climate Change</title>
 </head>
 
 <body>
@@ -17,14 +17,24 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html">
-                        <div id="logo" class="pull-left" alt="Logo">
+                        <div id="logo" class="pull-left img-responsive">
                         </div>
                         <div class="navbar-brand">
                             <h1>Environmental Protection Campaign</h1>
                             <span>on Climate Change</span>
                         </div>
                     </a>
-                    <!-- insert navigation bar here huhuhu -->
+                    <div>
+                        <button type="button" id="about" class="btn btn-primary outline my-buttons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9660;</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="team.html">The Team</a>
+                            <a class="dropdown-item" href="advocacy.html">The Advocacy</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="other.html">Other Advocacy Events&amp;Campaigns</a>
+                        </div>
+                    </div>
+                    <a href="news.html" id="news" class="btn btn-primary outline my-buttons" role="button" aria-haspopup="true" aria-expanded="false">News</a>
+                    <a href="faqs.html" id="faqs" class="btn btn-primary outline my-buttons" role="button" aria-haspopup="true" aria-expanded="false">FAQs</a>
                 </div>
             </div>
         </nav>
@@ -32,23 +42,29 @@
     <!-- MAIN CONTENT -->
     <div id="main-content">
         <div class="jumbotron" id="video">
-            <img src="images/placeholder1.jpg" class="img-responsive" />
+            <img src="images/placeholder1.jpg" class="img-responsive" alt="Video about Climate Change" />
         </div>
-        <div id="affected" class="jumbotron text-center">
-            <span>Who are affected?</span>
+        <div id="affected">
             <div class="container">
-                <div class="row">
-                    <section class="col-sm-4 img-responsive img-circle">
-                        <a href="#"><img src="images/placeholder2.jpg"/></a>
-                    </section>
-                    <section class="col-sm-4 img-responsive img-circle">
-                        <a href="#"><img src="images/placeholder3.jpg"/</a>
-                    </section>
-                    <section class="col-sm-4 img-responsive img-circle">
-                        <a href="#"><img src="images/placeholder4.jpg"/</a>
-                    </section>
+                <span class="text-center">Who are affected?</span>
+                <div class="img-responsive img-circle col-sm-4 details">
+                    <img src="images/placeholder2.jpg" class="image" alt="Environment" />
+                    <div class="middle">
+                        <div class="text"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</span></div>
+                    </div>
                 </div>
-                
+                <div class="img-responsive img-circle col-sm-4 details">
+                    <img src="images/placeholder3.jpg" class="image" alt="People" />
+                    <div class="middle">
+                        <div class="text"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</span></div>
+                    </div>
+                </div>
+                <div class="img-responsive img-circle col-sm-4 details">
+                    <img src="images/placeholder4.jpg" class="image" alt="Animals" />
+                    <div class="middle">
+                        <div class="text"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -56,19 +72,19 @@
     <footer class="panel-footer" id="contact">
         <div class="container">
             <div class="row">
-                <section class="col-sm-4">
+                <div class="col-sm-4 details">
                     <span>Contact Us</span>
-                </section>
-                <section class="col-sm-4">
+                </div>
+                <div class="col-sm-4 details">
                     <span>Social Media Accounts</span>
                     <br> Facebook: <a href="facebook.com">blahblahblah</a>
                     <br> Twitter: <a href="twitter.com">blahblahblah</a>
-                </section>
-                <section class="col-sm-4">
+                </div>
+                <div class="col-sm-4 details">
                     <span>Contact Details</span>
                     <br> Email Address: blahblahblah
                     <br> Contact Number: blahblahblah
-                </section>
+                </div>
             </div>
             <div id="copyright" class="text-center">&copy; Copyright Environmental Protection Campaign 2017</div>
         </div>
