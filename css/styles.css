@@ -120,7 +120,8 @@ div.open .dropdown-menu a:focus {
     height: auto;
 }
 
-#definition {
+#definition,
+#team {
     background-color: #9FEDD7;
     width: 100%;
     height: auto;
@@ -133,7 +134,7 @@ div.open .dropdown-menu a:focus {
     color: #026670;
 }
 
-#definition p, 
+#definition p,
 #definition span {
     font-size: 1em;
     font-weight: 800;
@@ -161,16 +162,23 @@ div.open .dropdown-menu a:focus {
     margin-top: -30px;
 }
 
-#affected span {
+#affected span,
+#team span:nth-child(1) {
     display: block;
     color: #026670;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 3em;
     margin: 30px 0;
+    text-align: center;
 }
 
-div#affected div.container {
+#team span:nth-child(1) {
+    margin-bottom: -50px;
+}
+
+div#affected div.container,
+div#team div.container {
     padding-bottom: 50px;
 }
 
@@ -195,7 +203,8 @@ div#affected div.container {
     backface-visibility: hidden;
 }
 
-.middle {
+.middle,
+.middle2 {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -209,20 +218,55 @@ div#affected div.container {
     opacity: 0.3;
 }
 
-.details:hover .middle {
+.details:hover .middle,
+.details:hover .middle2 {
     opacity: .5;
+}
+
+.middle,
+.middle2 {
+    background-color: #fff;
+    padding: 16px 32px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
 }
 
 .middle {
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    background-color: #fff;
-    padding: 16px 32px;
     margin-left: -25px;
-    font-size: 10px;
-    text-align: center;
-    vertical-align: center;
+}
+
+.middle2 {
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+}
+
+#individual-imgs img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+    position: relative;
+    top: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+#team .text span {
+    display: block;
+    color: #026670;
+    font-size: 1.5em;
+    margin: 30px 0;
+    opacity: 1;
+}
+
+div#individual-imgs {
+    width: 100%;
+    height: 450px;
 }
 
 
