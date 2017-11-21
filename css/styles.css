@@ -1,3 +1,5 @@
+/*** BASE STYLING ***/
+
 body {
     font-size: 16px;
     color: #fff;
@@ -5,7 +7,7 @@ body {
 }
 
 
-/* Header */
+/*** HEADER ***/
 
 header {
     position: fixed;
@@ -21,6 +23,9 @@ header {
     height: 75px;
 }
 
+
+/* LOGO IMAGE */
+
 #logo {
     background: url('../images/logo.png') no-repeat;
     width: 135px;
@@ -29,6 +34,9 @@ header {
     margin-left: 75px;
     margin-right: 15px;
 }
+
+
+/* COMPANY NAME */
 
 .navbar-brand h1 {
     color: black;
@@ -49,6 +57,9 @@ header {
     font-size: 1em;
     text-transform: uppercase;
 }
+
+
+/* MENU BUTTON */
 
 button a,
 button a:hover,
@@ -71,6 +82,9 @@ button a:focus {
     text-align: right;
 }
 
+
+/* MENU BUTTON -- WHEN CLICKED */
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -81,6 +95,9 @@ button a:focus {
     border-color: #026670;
 }
 
+
+/* MENU DROPDOWN -- WHEN OPEN */
+
 div.open .dropdown-menu {
     position: absolute;
     top: 70px;
@@ -88,6 +105,9 @@ div.open .dropdown-menu {
     float: none;
     left: 990px;
 }
+
+
+/* MENU DROPDOWN-ITEMS -- WHEN OPEN */
 
 div.open .dropdown-menu a {
     display: block;
@@ -100,6 +120,9 @@ div.open .dropdown-menu a {
     padding-bottom: 5px;
 }
 
+
+/* MENU DROPDOWN-ITEMS -- HOVER & FOCUS */
+
 div.open .dropdown-menu a:hover,
 div.open .dropdown-menu a:focus {
     text-decoration: none;
@@ -108,10 +131,10 @@ div.open .dropdown-menu a:focus {
 }
 
 
-/* End of Header */
+/*** END OF HEADER ***/
 
 
-/* Main Content */
+/*** MAIN CONTENT ***/
 
 #main-content {
     position: relative;
@@ -120,13 +143,27 @@ div.open .dropdown-menu a:focus {
     height: auto;
 }
 
+
+/* DEFINITION OF CLIMATE CHANGE (HOME PAGE),
+ABOUT THE TEAM (TEAM PAGE),
+OTHER ADVOCACY CAMPAIGNS & EVENTS (OTHERS PAGE) */
+
 #definition,
 #team,
-#others {
+#others,
+#faqs {
     background-color: #9FEDD7;
     width: 100%;
     height: auto;
 }
+
+div#affected div.container,
+div#team div.container {
+    padding-bottom: 50px;
+}
+
+
+/* DEFINITION OF CLIMATE CHANGE (HOME PAGE) */
 
 #definition h2 {
     padding-top: 10px;
@@ -147,9 +184,9 @@ div.open .dropdown-menu a:focus {
     margin-bottom: 50px;
 }
 
-#video {
-    padding: 25px 0 60px 0;
-}
+
+/* VIDEO ABOUT CLIMATE CHANGE (HOME PAGE),
+OTHER WEBSITES (OTHERS PAGE) */
 
 #video iframe,
 #others iframe {
@@ -159,14 +196,41 @@ div.open .dropdown-menu a:focus {
     margin: 0 auto;
 }
 
+
+/* VIDEO ABOUT CLIMATE CHANGE (HOME PAGE) */
+
+#video {
+    padding: 25px 0 60px 0;
+}
+
+
+/* WHO ARE AFFECTED (HOME PAGE) */
+
 #affected {
     background-color: #FCE181;
     margin-top: -30px;
 }
 
+
+/* WHO ARE AFFECTED IMAGES (HOME PAGE) */
+
+.img-circle img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 50px #fff;
+    border: 2px solid #fff;
+}
+
+
+/* WHO ARE AFFECTED TEXT (HOME PAGE),
+ABOUT THE TEAM TEXT (TEAM PAGE),
+OTHER ADVOCACY CAMPAIGNS AND EVENTS (OTHERS PAGE) */
+
 #affected span,
-#team span:nth-child(1),
-#others span {
+#team h1,
+#others span,
+#faqs h1 {
     display: block;
     color: #026670;
     font-weight: 900;
@@ -176,26 +240,20 @@ div.open .dropdown-menu a:focus {
     text-align: center;
 }
 
-#team span:nth-child(1) {
+#team h1 {
     margin-bottom: -50px;
 }
 
-div#affected div.container,
-div#team div.container {
-    padding-bottom: 50px;
-}
+
+/* CENTER IMAGES */
 
 .img-responsive {
     margin: 0 auto;
 }
 
-.img-circle img {
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 0 50px #fff;
-    border: 2px solid #fff;
-}
+
+/* WHO ARE AFFECTED IMAGES (HOME PAGE),
+ABOUT THE TEAM IMAGES (TEAM PAGE) */
 
 .image {
     opacity: 1;
@@ -214,25 +272,20 @@ div#team div.container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.details:hover .image {
-    opacity: 0.3;
-}
-
-.details:hover .middle,
-.details:hover .middle2 {
-    opacity: .5;
-}
-
-.middle,
-.middle2 {
-    background-color: #fff;
+    -ms-transform: translate(-50%, -50%) background-color: #fff;
     padding: 16px 32px;
     font-size: 10px;
     text-align: center;
     vertical-align: center;
+}
+
+.details2:hover .image {
+    opacity: 0.3;
+}
+
+.details2:hover .middle,
+.details2:hover .middle2 {
+    opacity: 1;
 }
 
 .middle {
@@ -248,6 +301,17 @@ div#team div.container {
     margin-top: 100px;
 }
 
+
+/* ABOUT THE TEAM */
+
+div#individual-imgs {
+    width: 100%;
+    height: 450px;
+}
+
+
+/* ABOUT THE TEAM IMAGES (TEAM PAGE) */
+
 #individual-imgs img {
     width: 250px;
     height: 250px;
@@ -259,29 +323,92 @@ div#team div.container {
     margin: 0 auto;
 }
 
+
+/* ABOUT THE TEAM TEXT (TEAM PAGE)
+-- SHOWS UP: HOVER IMAGES */
+
 #team .text span {
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
     margin-bottom: 20px;
     color: #026670;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: 900;
     opacity: 1;
 }
 
-div#individual-imgs {
-    width: 100%;
-    height: 450px;
-}
+
+/* WEBSITES EMBEDDED (OTHERS PAGE) */
 
 #others iframe {
     margin-bottom: 50px;
 }
 
-/* End of Main Content */
+#others a {
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#others a:hover,
+#others a:focus {
+    text-decoration: none;
+}
+
+.websites {
+    margin-bottom: 15px;
+}
 
 
-/* Footer */
+/* FAQS TEXT (FAQS) */
+
+#faqs {
+    width: 100%;
+    height: auto;
+}
+
+div#faqs {
+    background-color: #9FEDD7;
+    margin-bottom: -75px;
+}
+
+#faqs section {
+    background-color: #fff;
+    width: 550px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+div.questions {
+    height: 125px;
+}
+
+div.questions h2,
+#faqs section h2 {
+    color: #026670;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#faqs blockquote {
+    border-left: 5px solid black;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/*** END OF MAIN CONTENT ***/
+
+
+/*** FOOTER ***/
 
 footer {
     width: 100%;
