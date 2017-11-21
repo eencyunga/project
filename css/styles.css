@@ -121,7 +121,8 @@ div.open .dropdown-menu a:focus {
 }
 
 #definition,
-#team {
+#team,
+#others {
     background-color: #9FEDD7;
     width: 100%;
     height: auto;
@@ -150,7 +151,8 @@ div.open .dropdown-menu a:focus {
     padding: 25px 0 60px 0;
 }
 
-#video iframe {
+#video iframe,
+#others iframe {
     box-shadow: 0 0 50px #026670;
     border: 2px solid #026670;
     display: block;
@@ -273,14 +275,8 @@ div#individual-imgs {
 }
 
 #others iframe {
-    display: block;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
-
-div#others {
-    padding-bottom: 75px;
-}
-
 
 /* End of Main Content */
 
