@@ -168,6 +168,125 @@ div.blue-bg {
 /*** HOME PAGE ***/
 
 
+/* SLIDESHOW CONTAINER */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* NEXT AND PREVIOUS BUTTONS */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* POSITION THE NEXT BUTTON TO THE RIGHT */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* ON HOVER, ADD A BLACK BG COLOR
+WITH A LITTLE BIT SEE-THROUGH */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* CAPTION TEXT */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* NUMBER TEXT */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* DOTS/BULLETS/INDICATORS */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* FADING ANIMATION */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
 /* DEFINITION OF CLIMATE CHANGE */
 
 #definition h2 {
@@ -430,12 +549,84 @@ div#others {
     color: #000;
     font-weight: 600;
     font-size: 1em;
+    padding-top: 15px;
 }
 
 #events {
     display: block;
     margin-left: 15px;
     clear: left;
+}
+
+/*** ABOUT THE ADVOCACY PAGE ***/
+
+div#advocacy {
+    background-color: #9FEDD7;
+    height: auto;
+}
+
+#advocacy section {
+    margin-bottom: 20px;
+}
+
+#advocacy section#help {
+    margin-bottom: 100px;
+}
+
+#advocacy h1 {
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#advocacy h2 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+#advocacy p,
+#advocacy ol,
+#advocacy span {
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 15px;
+}
+
+section#background,
+section#mission,
+section#help {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    clear: left;
+}
+
+#advocacy section#mission {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+}
+
+#mission p {
+    padding: 15px;
+}
+
+#content {
+  overflow: hidden;
+  height: 110px;
+  margin-bottom: 10px;
+}
+
+#advocacy button {
+    color: #000;
 }
 
 /*** FOOTER ***/
