@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -19,7 +18,7 @@
                 <div class="navbar-header">
                     <!-- COMPANY NAME -->
                     <a href="index.html">
-                        <div id="logo" class="pull-left img-responsive">
+                        <div id="logo" class="pull-left ">
                         </div>
                         <div class="navbar-brand">
                             <h1>Environmental Protection Campaign</h1>
@@ -28,7 +27,7 @@
                     </a>
                     <!-- END OF COMPANY NAME -->
                     <!-- MENU BUTTON/DROPDOWN -->
-                    <div>
+                    <div class="dropdown">
                         <button type="button" class="btn btn-primary outline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9660;</button>
                         <!-- DROPDOWN MENU -->
                         <div class="dropdown-menu">
@@ -36,7 +35,6 @@
                             <a class="dropdown-item" href="team.html">The Team</a>
                             <a class="dropdown-item" href="advocacy.html">The Advocacy</a>
                             <a class="dropdown-item" href="other.html">Other Advocacy Events&amp;Campaigns</a>
-                            <a class="dropdown-item" href="news.html">News</a>
                             <a class="dropdown-item" href="faqs.html">FAQs</a>
                         </div>
                         <!-- END OF DROPDOWN MENU -->
@@ -54,30 +52,41 @@
     <div id="main-content">
         <!-- FAQS -->
         <div id="faqs">
-            <div class="container">
+            <div class="container blue-bg">
                 <h1>Frequently Asked Questions</h1>
-                <section class="col-sm-6 img-responsive">
+                <section class="col-sm-6">
                     <div class="questions">
-                        <h2>What is environmental advocacy?</h2>
+                        <h2>What is Environmental Advocacy?</h2>
+                        <blockquote>Environmental Advocacy involves both protecting the public from environmental hazards and protecting the natural world. Advocates organize a group around a cause and work to implement changes that have a lasting and positive effect. (Enviro Education, n.d.) </blockquote>
                     </div>
-                    <blockquote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </blockquote>
                 </section>
-                <section class="col-sm-6 img-responsive">
+                <section class="col-sm-6">
                     <div class="questions">
-                        <h2 class="questions">What is the mission of the Environmental Protection Campaign on Climate Change?</h2>
+                        <h2>What is the goal of the Environmental Protection Campaign on Climate Change?</h2>
+                        <blockquote>The goal of our advocacy is to call people, especially the youth, to join us to help stop climate change. We aim to promote action, offer solutions, and inspire real change. </blockquote>
                     </div>
-                    <blockquote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </blockquote>
                 </section>
-                <section class="col-sm-6 img-responsive">
-                    <h2 class="questions">How do I make other people care?</h2>
-                    <blockquote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </blockquote>
+                <section class="col-sm-6">
+                    <div class="questions">
+                        <h2>How do I make other people care?</h2>
+                        <blockquote>To make other people care about the issue and our advocacy, voicing them out would be a really great help. Also, informing them about the negative impacts of climate change could make other people realize and make them join the campaign. </blockquote>
+                    </div>
                 </section>
-                <section class="col-sm-6 img-responsive">
-                    <h2 class="questions">Do my advocacy efforts really matter?</h2>
-                    <blockquote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </blockquote>
+                <section class="col-sm-6">
+                    <div class="questions">
+                        <h2>Do my advocacy efforts really matter?</h2>
+                        <blockquote>Yes, even your littlest help matters. The simple action we do done by everyone else at the same time becomes a huge effort in response to our movement. We could save lives by protecting our environment because it is where we get the necessities in life. </blockquote>
+                    </div>
+                </section>
+                <section class="col-sm-6">
+                    <div class="questions">
+                        <h2>How can I best support the advocacy?</h2>
+                        <blockquote>To support our advocacy further, you can share it, act upon it, and make it a habit. Share: Spread the word to raise awareness about the issue. Act: Do actions that can help stop climate change (i.e., being energy efficient, carpooling) Habit: Change does not happen with one action only, so make sure you make it habit to save our environment. </blockquote>
+                    </div>
                 </section>
             </div>
             <!-- END OF FAQS -->
+            <div id=""></div>
         </div>
         <!-- END OF MAIN CONTENT -->
         <!-- FOOTER -->
@@ -86,37 +95,46 @@
             <div class="container">
                 <div class="row">
                     <!-- CONTACT US TEXT -->
-                    <div class="col-sm-4 details">
+                    <div id="contact-us" class="col-sm-4 pull-left">
                         <span>Contact Us</span>
                     </div>
                     <!-- END OF CONTACT US TEXT -->
                     <!-- SOCIAL MEDIA ACCOUNTS -->
-                    <div class="col-sm-4 details">
-                        <span>Social Media Accounts</span>
-                        <br> Facebook: <a href="facebook.com">blahblahblah</a>
-                        <br> Twitter: <a href="twitter.com">blahblahblah</a>
+                    <div class="col-sm-4">
+                        <span id="social-media">Social Media</span>
+                        <div id="icons" class="pull-left">
+                            <a href="https://www.facebook.com/Environmental-ProtectionCampaign-
+                        318181515325704/">
+                                <img src="images/facebook.ico" width="36" height="36" />
+                            </a>
+                            <a href="https://www.twitter.com/Environcampaign/">
+                                <img src="images/twitter.png" />
+                            </a>
+                        </div>
                     </div>
-                    <!-- END OF SOCIAL MEDIA ACCOUNTS -->
-                    <!-- CONTACT DETAILS -->
-                    <div class="col-sm-4 details">
-                        <span>Contact Details</span>
-                        <br> Email Address: blahblahblah
-                        <br> Contact Number: blahblahblah
+                    <div class="col-sm-4">
+                        <span id="contact-details">Contact Details</span>
+                        <span>Email Address: enviclimatechange@gmail.com</span>
+                        <span>Contact Number: +63 917 722 3724</span>
                     </div>
-                    <!-- END OF CONTACT DETAILS -->
                 </div>
-                <!-- COPYRIGHT -->
-                <div id="copyright" class="text-center">
-                    &copy; Copyright Environmental Protection Campaign 2017
-                </div>
-                <!-- END OF COPYRIGHT -->
             </div>
-            <!-- END OF CONTACT US -->
-        </footer>
-        <!-- END OF FOOTER -->
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+            <!-- END OF SOCIAL MEDIA ACCOUNTS -->
+            <!-- CONTACT DETAILS -->
+            <!-- END OF CONTACT DETAILS -->
+    </div>
+    <!-- COPYRIGHT -->
+    <div id="copyright" class="text-center">
+        &copy; Copyright Environmental Protection Campaign 2017
+    </div>
+    <!-- END OF COPYRIGHT -->
+    </div>
+    <!-- END OF CONTACT US -->
+    </footer>
+    <!-- END OF FOOTER -->
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

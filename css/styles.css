@@ -7,6 +7,13 @@ body {
 }
 
 
+/* CENTER IMAGES */
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
 /*** HEADER ***/
 
 header {
@@ -38,39 +45,36 @@ header {
 
 /* COMPANY NAME */
 
+.navbar-header a:hover,
+.navbar-header a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand h1,
+.navbar-brand span {
+    color: #000;
+    text-transform: uppercase;
+}
+
 .navbar-brand h1 {
-    color: black;
     font-size: 1.25em;
     font-weight: 900;
-    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.navbar-brand a:hover,
-.navbar-brand a:focus {
-    text-decoration: none;
-}
-
 .navbar-brand span {
-    color: #000;
     font-size: 1em;
-    text-transform: uppercase;
 }
 
 
 /* MENU BUTTON */
 
-button a,
-button a:hover,
-button a:focus {
-    text-decoration: none;
-}
-
 .btn-primary {
-    position: absolute;
+    position: relative;
     top: 18px;
-    right: 200px;
+    left: 100%;
+    display: inline-block;
     height: 35px;
     width: 155px;
     color: #026670;
@@ -80,6 +84,17 @@ button a:focus {
     background-color: #EDEAE5;
     border-color: #026670;
     text-align: right;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+button a,
+button a:hover,
+button a:focus {
+    text-decoration: none;
 }
 
 
@@ -99,11 +114,11 @@ button a:focus {
 /* MENU DROPDOWN -- WHEN OPEN */
 
 div.open .dropdown-menu {
+    display: block;
     position: absolute;
+    left: 100%;
     top: 70px;
     width: 90px;
-    float: none;
-    left: 990px;
 }
 
 
@@ -112,7 +127,7 @@ div.open .dropdown-menu {
 div.open .dropdown-menu a {
     display: block;
     text-align: center;
-    color: black;
+    color: #000;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 15px;
@@ -143,27 +158,17 @@ div.open .dropdown-menu a:focus {
     height: auto;
 }
 
-
-/* DEFINITION OF CLIMATE CHANGE (HOME PAGE),
-ABOUT THE TEAM (TEAM PAGE),
-OTHER ADVOCACY CAMPAIGNS & EVENTS (OTHERS PAGE) */
-
-#definition,
-#team,
-#others,
-#faqs {
+div.blue-bg {
     background-color: #9FEDD7;
     width: 100%;
     height: auto;
 }
 
-div#affected div.container,
-div#team div.container {
-    padding-bottom: 50px;
-}
+
+/*** HOME PAGE ***/
 
 
-/* DEFINITION OF CLIMATE CHANGE (HOME PAGE) */
+/* DEFINITION OF CLIMATE CHANGE */
 
 #definition h2 {
     padding-top: 10px;
@@ -176,17 +181,12 @@ div#team div.container {
 #definition span {
     font-size: 1em;
     font-weight: 800;
-    color: black;
+    color: #000;
     margin-bottom: 20px;
 }
 
-#definition p:nth-child(4) {
-    margin-bottom: 50px;
-}
 
-
-/* VIDEO ABOUT CLIMATE CHANGE (HOME PAGE),
-OTHER WEBSITES (OTHERS PAGE) */
+/* VIDEO ABOUT CLIMATE CHANGE */
 
 #video iframe,
 #others iframe {
@@ -196,64 +196,93 @@ OTHER WEBSITES (OTHERS PAGE) */
     margin: 0 auto;
 }
 
-
-/* VIDEO ABOUT CLIMATE CHANGE (HOME PAGE) */
-
 #video {
-    padding: 25px 0 60px 0;
+    padding: 25px;
 }
 
 
-/* WHO ARE AFFECTED (HOME PAGE) */
+/* WHO ARE AFFECTED */
 
-#affected {
+div#impact {
     background-color: #FCE181;
-    margin-top: -30px;
+    height: auto;
+    padding-bottom: 100px;
 }
 
-
-/* WHO ARE AFFECTED IMAGES (HOME PAGE) */
-
-.img-circle img {
-    border-radius: 100%;
+#impact img {
     width: 300px;
     height: 300px;
     box-shadow: 0 0 50px #fff;
     border: 2px solid #fff;
 }
 
+#impact h2,
+#impact h3,
+.effects p {
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+}
 
-/* WHO ARE AFFECTED TEXT (HOME PAGE),
-ABOUT THE TEAM TEXT (TEAM PAGE),
-OTHER ADVOCACY CAMPAIGNS AND EVENTS (OTHERS PAGE) */
-
-#affected span,
-#team h1,
-#others span,
-#faqs h1 {
-    display: block;
+#impact h2 {
     color: #026670;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 3em;
     margin: 30px 0;
-    text-align: center;
+}
+
+#impact h3 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.effects {
+    width: 300px;
+    height: auto;
+    background: #fff;
+    margin-top: 15px;
+}
+
+.effects p {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    margin-top: -20px;
+}
+
+
+/*** ABOUT THE TEAM PAGE ***/
+
+div#team {
+    background-color: #9FEDD7;
+    padding-bottom: 100px;
 }
 
 #team h1 {
-    margin-bottom: -50px;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 30px 0;
 }
 
-
-/* CENTER IMAGES */
-
-.img-responsive {
+#team img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 50px #026670;
+    border: 2px solid #026670;
+    display: block;
     margin: 0 auto;
 }
 
 
-/* WHO ARE AFFECTED IMAGES (HOME PAGE),
-ABOUT THE TEAM IMAGES (TEAM PAGE) */
+/* CODE FOR HOVER */
 
 .image {
     opacity: 1;
@@ -264,12 +293,11 @@ ABOUT THE TEAM IMAGES (TEAM PAGE) */
     backface-visibility: hidden;
 }
 
-.middle,
-.middle2 {
+.hover {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%) background-color: #fff;
@@ -277,177 +305,171 @@ ABOUT THE TEAM IMAGES (TEAM PAGE) */
     font-size: 10px;
     text-align: center;
     vertical-align: center;
+    width: 250px;
+    height: 250px;
 }
 
-.details2:hover .image {
+.individual:hover .image {
     opacity: 0.3;
 }
 
-.details2:hover .middle,
-.details2:hover .middle2 {
+.individual:hover .hover {
     opacity: 1;
 }
 
-.middle {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin-left: -25px;
-}
 
-.middle2 {
-    width: 250px;
-    height: 250px;
-    margin-top: 100px;
-}
-
-
-/* ABOUT THE TEAM */
-
-div#individual-imgs {
-    width: 100%;
-    height: 450px;
-}
-
-
-/* ABOUT THE TEAM IMAGES (TEAM PAGE) */
-
-#individual-imgs img {
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 0 50px #026670;
-    border: 2px solid #026670;
-    position: relative;
-    top: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-
-/* ABOUT THE TEAM TEXT (TEAM PAGE)
+/* PERSONAL INFORMATION
 -- SHOWS UP: HOVER IMAGES */
 
-#team .text span {
-    display: block;
+div.personal-info {
+    position: relative;
     margin: 0 auto;
-    margin-bottom: 20px;
+}
+
+.personal-info span {
     color: #026670;
     font-size: 2em;
     font-weight: 900;
     opacity: 1;
+    display: block;
+    margin-bottom: 20px;
 }
 
 
-/* WEBSITES EMBEDDED (OTHERS PAGE) */
+/* ADDITIONAL INFO 
+-- BELOW IMAGES */
 
-#others iframe {
-    margin-bottom: 50px;
-}
-
-#others a {
-    color: black;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-#others a:hover,
-#others a:focus {
-    text-decoration: none;
-}
-
-.websites {
-    margin-bottom: 15px;
-}
-
-
-/* FAQS TEXT (FAQS) */
-
-#faqs {
-    width: 100%;
+.additional-info {
+    display: block;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 250px;
     height: auto;
 }
+
+.additional-info p {
+    color: #026670;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/*** FAQS PAGE ***/
 
 div#faqs {
     background-color: #9FEDD7;
-    margin-bottom: -75px;
+    padding-bottom: 50px;
 }
 
-#faqs section {
-    background-color: #fff;
-    width: 550px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    border-radius: 15px;
+#faqs h1 {
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 30px;
 }
 
-div.questions {
-    height: 125px;
-}
-
-div.questions h2,
-#faqs section h2 {
+#faqs h2 {
     color: #026670;
     font-size: 2em;
     font-weight: 900;
 }
 
 #faqs blockquote {
-    border-left: 5px solid black;
-    color: black;
+    border-left: 5px solid #000;
+    color: #000;
     font-size: 1em;
     font-weight: 600;
 }
 
+.questions {
+    height: 175px;
+}
 
-/*** END OF MAIN CONTENT ***/
 
+/*** OTHER ADVOCACY CAMPAIGNS AND EVENTS ***/
+
+div#others {
+    background-color: #9FEDD7;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+#others h1 {
+    vertical-align: center;
+    padding: 10px;
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#campaigns {
+    display: block;
+    margin-left: 15px;
+}
+
+#others h2 {
+    color: #026670;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+#others h3 {
+    color: #026670;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#others p {
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#events {
+    display: block;
+    margin-left: 15px;
+    clear: left;
+}
 
 /*** FOOTER ***/
 
 footer {
     width: 100%;
-    height: auto;
-    bottom: 0;
-    margin-top: 75px;
+    position: relative;
 }
 
 #contact {
     background: #026670;
-    width: 100%;
-    height: auto;
 }
 
-.details span {
+#contact-us {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FCE181;
+    font-size: 3em;
+    color: #9FEDD7;
+}
+
+#contact-details,
+#social-media {
+    display: block;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     color: #FCE181;
 }
 
-.details a {
-    color: #9FEDD7;
-}
-
-.details a:hover,
-.details a:focus {
-    text-decoration: none;
-    color: #FCE181;
+#icons a:hover {
+    opacity: 0.7;
 }
 
 #copyright {
     margin: 15px 0;
 }
-
-
-/* Color scheme:
-Teal #026670;
-Sky Blue #9FEDD7;
-Cream #FEF9C7;
-Yellow #FCE181;
-Neutral #EDEAE5;
-*/

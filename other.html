@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -28,7 +27,7 @@
                     </a>
                     <!-- END OF COMPANY NAME -->
                     <!-- MENU BUTTON/DROPDOWN -->
-                    <div>
+                    <div class="dropdown">
                         <button type="button" class="btn btn-primary outline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9660;</button>
                         <!-- DROPDOWN MENU -->
                         <div class="dropdown-menu">
@@ -51,77 +50,94 @@
     <!-- END OF HEADER -->
     <!-- MAIN CONTENT -->
     <div id="main-content">
-        <!-- OTHER ADVOCACY CAMPAIGNS AND EVENTS -->
-        <div class="container" id="others">
-            <!-- HEADING -->
-            <span>Other Advocacy Campaigns &amp; Events</span>
-            <!-- END OF HEADING -->
-            <!-- WEBSITE 1 -->
-            <div class="col-sm-6">
-                <div class="col-sm-6 websites"><a href="https://350.org">350</a></div>
-                <iframe width="600" height="850" src="https://350.org" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- END OF WEBSITE 1 -->
-            <!-- WEBSITE 2 -->
-            <div class="col-sm-6">
-                <div class="col-sm-6 websites">
-                    <a href="https://connect4climate.org/learn/solving-climate-change">Connect4Climate</a>
+        <!-- OTHERS -->
+        <div id="others">
+            <div class="container blue-bg">
+                <h1 class="text-center">Other Advocacy Campaigns &amp; Events</h1>
+                <div>
+                    <div id="campaigns">
+                        <h2>Campaigns</h2>
+                    </div>
+                    <section class="col-sm-4">
+                        <h3>350</h3>
+                        <p>350.org is building the global grassroots climate movement that can hold our leaders accountable to science and justice. 350 uses online campaigns, grassroots organizing, and mass public actions to oppose new coal, oil and gas projects, take money out of the companies that are heating up the planet, and build 100% clean energy solutions that work for all. 350's network extends to 188 countries. </p>
+                        <a href="https://www.350.org">Learn More</a>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>World Wildlife Fund</h3>
+                        <p>WWF is the world’s leading independent conservation organization. Their mission is to create a world where people and wildlife can thrive together. They are working with government to bring forward policies to reduce UK emissions in line with International targets and with businesses to reduce their impact and emissions. They are also working to increase renewable energy use, including offshore wind farms particularly around the Scottish coast and on international policy to limit emissions from the aviation industry. </p>
+                        <a href="https://www.wwf.org.uk/what-we-do/area-of-work/climate-change-and-energy ">Learn More</a>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>GetUp!</h3>
+                        <p>GetUp! is an independent movement to build a progressive Australia and bring participation back into our democracy. GetUp members are leading the way on action against climate change and for a renewable energy future. We also stand for the ongoing protection of our forests, national parks and Great Barrier Reef. </p>
+                        <a href="https://www.getup.org.au/">Learn More</a>
+                    </section>
                 </div>
-                <iframe width="600" height="850" src="https://connect4climate.org/learn/solving-climate-change" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- END OF WEBSITE 2 -->
-            <!-- WEBSITE 3 -->
-            <div class="col-sm-6">
-                <div class="col-sm-6 websites">
-                    <a href="https://wwf.org.uk/what-we-do/area-of-work/climate-change-and-energy">World Wide Fund</a>
+                <div id="events">
+                        <h2>Events</h2>
+                    </div>
+                    <section class="col-sm-4">
+                        <h3>The Climate Run</h3>
+                        <p>The Climate Run is an event supported by the Global Youth Climate Network – an initiative of Y2Y - in partnership with Connect4Climate, that invites everyone who is passionate about climate change and the world to take part in a 5K or 15K charity run for climate. </p>
+                        <a href="https://www.connect4climate.org/event/climate-runwashington-dc">Learn More</a>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>CMS VATAVARAN Environment &amp; Wildlife Film Festival and Forum</h3>
+                        <p>CMS VATAVARAN will be celebrating its 9th edition of the competitive International Film Festival and Forum. The 9th edition will once again delve into the issues of climate change and water under the theme Conservation4Water. Films showing the interconnectedness of climate change and water, water struggles in a world dealing with global warming, climate variability, food and health insecurity, desertification, biodiversity loss, and environmental damage can be submitted under this theme.</p>
+                        <a href=" https://www.connect4climate.org/event/cms-vatavaran-environment-wildlife-filmfestival-and-forum">Learn More</a>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>Climate Week NYC</h3>
+                        <p>Climate Week NYC is a summit that gathers the most influential leaders from business, states and cities annually to share why and how they are embracing the opportunities of the clean economy. In 2017, Climate Week NYC will celebrate the scale of global climate action and how we ensure jobs and prosperity for all. </p>
+                        <a href=" https://www.connect4climate.org/event/climate-weeknyc-2017">Learn More</a>
+                    </section>
                 </div>
-                <iframe width="600" height="850" src="https://wwf.org.uk/what-we-do/area-of-work/climate-change-and-energy" frameborder="0" allowfullscreen></iframe>
             </div>
-            <!-- END OF WEBSITE 3 -->
-            <!-- WEBSITE 4 -->
-            <div class="col-sm-6">
-                <div class="col-sm-6 websites">
-                    <a href="https://peopleandplanet.org/fossil-free">People&amp;Planet</a>
-                </div>
-                <iframe width="600" height="850" src="https://peopleandplanet.org/fossil-free" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- END OF WEBSITE 4 -->
+            <!--END OF OTHERS -->
         </div>
-        <!--END OF OTHERS -->
+        <!--END OF MAIN CONTENT -->
+        <!-- FOOTER -->
+        <footer class="panel-footer" id="contact">
+            <!-- CONTACT US -->
+            <div class="container">
+                <div class="row">
+                    <!-- CONTACT US TEXT -->
+                    <div id="contact-us" class="col-sm-4 pull-left">
+                        <span>Contact Us</span>
+                    </div>
+                    <!-- END OF CONTACT US TEXT -->
+                    <!-- SOCIAL MEDIA ACCOUNTS -->
+                    <div class="col-sm-4">
+                        <span id="social-media">Social Media</span>
+                        <div id="icons" class="pull-left">
+                            <a href="https://www.facebook.com/Environmental-ProtectionCampaign-
+                        318181515325704/">
+                                <img src="images/facebook.ico" width="36" height="36" />
+                            </a>
+                            <a href="https://www.twitter.com/Environcampaign/">
+                                <img src="images/twitter.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <span id="contact-details">Contact Details</span>
+                        <span>Email Address: enviclimatechange@gmail.com</span>
+                        <span>Contact Number: +63 917 722 3724</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF SOCIAL MEDIA ACCOUNTS -->
+            <!-- CONTACT DETAILS -->
+            <!-- END OF CONTACT DETAILS -->
     </div>
-    <!--END OF MAIN CONTENT -->
-    <!-- FOOTER -->
-    <footer class="panel-footer" id="contact">
-        <!-- CONTACT US -->
-        <div class="container">
-            <div class="row">
-                <!-- CONTACT US TEXT -->
-                <div class="col-sm-4 details">
-                    <span>Contact Us</span>
-                </div>
-                <!-- END OF CONTACT US TEXT -->
-                <!-- SOCIAL MEDIA ACCOUNTS -->
-                <div class="col-sm-4 details">
-                    <span>Social Media Accounts</span>
-                    <br> Facebook: <a href="facebook.com">blahblahblah</a>
-                    <br> Twitter: <a href="twitter.com">blahblahblah</a>
-                </div>
-                <!-- END OF SOCIAL MEDIA ACCOUNTS -->
-                <!-- CONTACT DETAILS -->
-                <div class="col-sm-4 details">
-                    <span>Contact Details</span>
-                    <br> Email Address: blahblahblah
-                    <br> Contact Number: blahblahblah
-                </div>
-                <!-- END OF CONTACT DETAILS -->
-            </div>
-            <!-- COPYRIGHT -->
-            <div id="copyright" class="text-center">
-                &copy; Copyright Environmental Protection Campaign 2017
-            </div>
-            <!-- END OF COPYRIGHT -->
-        </div>
-        <!-- END OF CONTACT US -->
+    <!-- COPYRIGHT -->
+    <div id="copyright" class="text-center">
+        &copy; Copyright Environmental Protection Campaign 2017
+    </div>
+    <!-- END OF COPYRIGHT -->
+    </div>
+    <!-- END OF CONTACT US -->
     </footer>
     <!-- END OF FOOTER -->
     <!-- JAVASCRIPT FILES -->

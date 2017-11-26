@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -28,7 +27,7 @@
                     </a>
                     <!-- END OF COMPANY NAME -->
                     <!-- MENU BUTTON/DROPDOWN -->
-                    <div>
+                    <div class="dropdown">
                         <button type="button" class="btn btn-primary outline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9660;</button>
                         <!-- DROPDOWN MENU -->
                         <div class="dropdown-menu">
@@ -52,9 +51,9 @@
     <!-- MAIN CONTENT -->
     <div id="main-content">
         <!-- CLIMATE CHANGE -->
-        <div class="container" id="definition">
+        <div class="container blue-bg">
             <!-- DEFINITION OF CLIMATE CHANGE -->
-            <section class="col-sm-6">
+            <section id="definition" class="col-sm-6">
                 <h2>What is Climate Change?</h2>
                 <p>Climate change is a change in the usual weather found in a place. This could be a change in how much rain a place usually gets in a year. Or it could be a change in a place's usual temperature for a month or season.
                 </p>
@@ -72,33 +71,36 @@
         </div>
         <!-- END OF CLIMATE CHANGE -->
         <!-- WHO ARE AFFECTED BY CLIMATE CHANGE -->
-        <div id="affected">
+        <div id="impact">
             <!-- CONTAINER -->
             <div class="container">
                 <!-- WHO ARE AFFECTED TEXT -->
-                <span class="text-center">Who are affected?</span>
+                <h2 class="text-center">Impact of Climate Change</h2>
                 <!-- END OF WHO ARE AFFECTED TEXT -->
                 <!-- ENVIRONMENT -->
-                <div class="img-responsive img-circle col-sm-4 details2">
-                    <img src="images/placeholder2.jpg" class="image" alt="Environment" />
-                    <div class="middle">
-                        <div class="text"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</span></div>
+                <div class="img-responsive col-sm-4">
+                    <img src="images/environment.jpg" alt="Environment" />
+                    <div class="effects">
+                        <h3>Impact on Environment</h3>
+                        <p>Sea levels are rising and oceans are becoming warmer. Longer, more intense droughts threaten crops, wildlife and freshwater supplies. Our planet’s diversity of life is at risk from the changing climate. (World Wildlife Fund, n.d.) </p>
                     </div>
                 </div>
                 <!-- END OF ENVIRONMENT -->
-                <!-- PEOPLE -->
-                <div class="img-responsive img-circle col-sm-4 details2">
-                    <img src="images/placeholder3.jpg" class="image" alt="People" />
-                    <div class="middle">
-                        <div class="text"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</span></div>
+                <!-- HUMAN BEINGS -->
+                <div class="img-responsive col-sm-4">
+                    <img src="images/people.jpg" alt="Humans" />
+                    <div class="effects">
+                        <h3>Impact on Humans</h3>
+                        <p>Climate change can affect human health in two main ways: first, by changing the severity or frequency of health problems that are already affected by climate or weather factors; and second, by creating unprecedented or unanticipated health problems or health threats in places where they have not previously occurred. (U.S Global Change Research Program, n.d.)</p>
                     </div>
                 </div>
                 <!-- END OF PEOPLE -->
                 <!-- ANIMALS -->
-                <div class="img-responsive img-circle col-sm-4 details2">
-                    <img src="images/placeholder4.jpg" class="image" alt="Animals" />
-                    <div class="middle">
-                        <div class="text"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</span></div>
+                <div class="img-responsive col-sm-4">
+                    <img src="images/animals.jpg" alt="Animals" />
+                    <div class="effects">
+                        <h3>Impact on Animals</h3>
+                        <p>Global warming is likely to be the greatest cause of species extinctions this century. The Intergovernmental Panel on Climate Change says a 1.5°C average rise may put 20-30% of species at risk of extinction. If the planet warms by more than 3°C, most ecosystems will struggle. Many of the world’s threatened species live in areas that will be severely affected by climate change. And climate change is happening too quickly for many species to adapt. (World Wildlife Fund, n.d.) </p>
                     </div>
                 </div>
                 <!-- END OF ANIMALS -->
@@ -114,30 +116,39 @@
         <div class="container">
             <div class="row">
                 <!-- CONTACT US TEXT -->
-                <div class="col-sm-4 details">
+                <div id="contact-us" class="col-sm-4 pull-left">
                     <span>Contact Us</span>
                 </div>
                 <!-- END OF CONTACT US TEXT -->
                 <!-- SOCIAL MEDIA ACCOUNTS -->
-                <div class="col-sm-4 details">
-                    <span>Social Media Accounts</span>
-                    <br> Facebook: <a href="facebook.com">blahblahblah</a>
-                    <br> Twitter: <a href="twitter.com">blahblahblah</a>
+                <div class="col-sm-4">
+                    <span id="social-media">Social Media</span>
+                    <div id="icons" class="pull-left">
+                        <a href="https://www.facebook.com/Environmental-ProtectionCampaign-
+                        318181515325704/">
+                            <img src="images/facebook.ico" width="36" height="36"/>
+                        </a>
+                        <a href="https://www.twitter.com/Environcampaign/">
+                            <img src="images/twitter.png" />
+                        </a>
+                    </div>
                 </div>
-                <!-- END OF SOCIAL MEDIA ACCOUNTS -->
-                <!-- CONTACT DETAILS -->
-                <div class="col-sm-4 details">
-                    <span>Contact Details</span>
-                    <br> Email Address: blahblahblah
-                    <br> Contact Number: blahblahblah
+                <div class="col-sm-4">
+                    <span id="contact-details">Contact Details</span>
+                    <span>Email Address: enviclimatechange@gmail.com</span>
+                    <span>Contact Number: +63 917 722 3724</span>
                 </div>
-                <!-- END OF CONTACT DETAILS -->
             </div>
-            <!-- COPYRIGHT -->
-            <div id="copyright" class="text-center">
-                &copy; Copyright Environmental Protection Campaign 2017
-            </div>
-            <!-- END OF COPYRIGHT -->
+        </div>
+        <!-- END OF SOCIAL MEDIA ACCOUNTS -->
+        <!-- CONTACT DETAILS -->
+        <!-- END OF CONTACT DETAILS -->
+        </div>
+        <!-- COPYRIGHT -->
+        <div id="copyright" class="text-center">
+            &copy; Copyright Environmental Protection Campaign 2017
+        </div>
+        <!-- END OF COPYRIGHT -->
         </div>
         <!-- END OF CONTACT US -->
     </footer>
